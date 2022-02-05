@@ -10,7 +10,14 @@
 		let number = parseInt(prompt('Enter a number:', 'number'));
 
 		for (let i = 1; i <= number; i++) {
-			console.log(i);
+			//check if number is divisible by both 3 and 5, if true write 'Fizz Buzz' to the console
+			if (i % 3 == 0 && i % 5 == 0) console.log('Fizz Buzz!');
+			//check if divisible by 3
+			else if (i % 3 == 0) console.log('Fizz!');
+			//check if divisible by 5
+			else if (i % 5 == 0) console.log('Buzz!');
+			//if none of the above, write current number in the console
+			else console.log(i);
 		}
 		</script>
 </body>
